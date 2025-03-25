@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffe Flex GR</title>
+  <!-- Χρήση της γραμματοσειράς Pacifico για καφεόμορφη εμφάνιση -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  
+  <header>
+  
+  
+    <div class="header-content">
+     
+	 
+<div class="top">
+    <img src="flex_logo_3.png" alt="Λογότυπο" style="width: 70px; height: auto; position: fixed; top: 10px; left: 10px; pointer-events: none; user-select: none; z-index: 1000;">
+
+    <div class="social-section" style="position: fixed; top: 10px; right: 10px; display: flex; gap: 10px; z-index: 1000;">
+
+        <!-- Instagram Button -->
+        <a href="https://www.instagram.com/flexcoffee/" target="_blank">
+            <img src="Instagram.png" alt="Instagram" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid #fff;">
+        </a>
+
+        <!-- Facebook Button -->
+        <a href="https://www.facebook.com/p/Coffee-flex-100069492316400/" target="_blank">
+            <img src="facebook.png" alt="Facebook" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid #fff;">
+        </a>
+
+    </div>
+</div>
+
+ <div class="menu-container">
+      <nav>
+        <ul class="menu">
+          <li class="dropdown">
+            <a href="#" id="menu-drinks">Ροφήματα</a>
+            <ul class="dropdown-content">
+              <li><a href="#" id="dropdown-drinks-coffee">Καφές</a></li>
+              <li><a href="#" id="dropdown-drinks-tea">Τσάι</a></li>
+              <li><a href="#" id="dropdown-drinks-juices">Χυμοί</a></li>
+              <li><a href="#" id="dropdown-drinks-smoothies">Smoothies</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" id="menu-food">Φαγητά</a>
+            <ul class="dropdown-content">
+              <li><a href="#" id="dropdown-food-starters">Ορεκτικά</a></li>
+              <li><a href="#" id="dropdown-food-mains">Κυρίως</a></li>
+              <li><a href="#" id="dropdown-food-desserts">Επιδόρπια</a></li>
+            </ul>
+          </li>
+		   <li class="dropdown">
+            <a href="#" id="menu-food">Έιδη Δώρων </a>
+            <ul class="dropdown-content">
+              <li><a href="#" id="dropdown-toy-1">μπιζου1</a></li>
+              <li><a href="#" id="dropdown-toy-2">μπιζου2</a></li>
+              <li><a href="#" id="dropdown-toy-3">μπιζου3</a></li>
+            </ul>
+          </li>
+		  
+		  
+		  
+        </ul>
+		
+		
+      </nav>
+      
+	  
+	        <!-- Κουμπί εναλλαγής γλώσσας -->
+
+	     <button id="language-toggle">Language: Eng / Gr</button>
+
+	  
+    </div>
+   
+
+
+   </div>
+  </header>
+  
+
+  <!-- Container για το κύριο περιεχόμενο -->
+  <div id="content">
+  
+   
+
+    <main id="product-container">
+      <h2 id="category-title"></h2>
+      <div id="subcategory-container"></div>
+      <div id="products"></div>
+    </main>
+  </div>
+
+  <!-- Footer τοποθετημένο έξω από το κύριο container, ώστε να εμφανίζεται πάντα στο κάτω μέρος -->
+  <footer>
+    <p>© 2025 Το Όνομα του Καταστήματος. Όλα τα δικαιώματα διατηρούνται.</p>
+    <nav class="footer-nav">
+      <a href="#">Αρχική</a>
+      <a href="#">Επικοινωνία</a>
+      <a href="#">Πολιτική Απορρήτου</a>
+    </nav>
+  </footer>
+
+
+<script src="products_gr.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
