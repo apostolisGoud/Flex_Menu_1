@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       if (document.documentElement.lang === 'el') {
         // Από Ελληνικά σε Αγγλικά
-        window.location.href = 'index_us.html';
+        window.location.href = 'index.html';
       } else {
         // Από Αγγλικά σε Ελληνικά
-        window.location.href = 'index_greek.html';
+        window.location.href = 'greek.html';
       }
     }, 500);
   });
