@@ -261,5 +261,18 @@ const products = {
 	
 	
 	
+  }, "Gift Items": {
+    "Item1": [
+      { name: "item1", price: "4.00€", image: "bruschetta.jpg" }
+    ],
+    "Item2": [
+      { name: "item2", price: "8.50€", image: "pasta.jpg" }
+    ],
+	"Item3": [
+      { name: "Item3", price: "8.50€", image: "pasta.jpg" }
+    ]
+	
   }
+  
+  
 };
