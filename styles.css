@@ -35,16 +35,16 @@ header {
   gap: 20px;
 }
 
-
 #content {
+  background-image: url('images/pp2.avif');
   flex: 1;
   transition: opacity 0.5s ease;
 }
 
 
-/* Κουμπί αλλαγής γλώσσας */
-#language-toggle {
-  background: #6d4c41;
+
+button {
+ background: #6d4c41;
   border: none;
   color: #fff;
   padding: 8px 16px;
@@ -55,9 +55,16 @@ header {
   transition: background 0.3s ease;
 }
 
-#language-toggle:hover {
+button:hover {
   background: #8d6e63;
 }
+
+
+
+
+
+
+
 
 /* Container για fade effect */
 #content {
@@ -87,6 +94,30 @@ header {
         }
 		
 		
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		
 /* Menu Container */
 .menu-container {
@@ -318,7 +349,7 @@ footer {
   background-color: #4e342e; /* βαθύ καφέ */
   color: #fff;
   padding: 20px 10px;
-  margin-top: 40px;
+  margin-top: 0px;
   text-align: center;
   transition: background-color 0.3s ease;
 }
@@ -391,3 +422,17 @@ footer .footer-nav a:hover {
     transform: scaleY(1);
   }
 }
+
+
+
+
+
+.contact-link {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .contact-link {
+            display: inline;
+        }
+    }
