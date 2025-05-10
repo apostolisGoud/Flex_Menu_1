@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function loadHomeContent(language) {
     if (language === 'en') {
       categoryTitle.textContent = "Welcome to our Coffee Shop"; // Τίτλος της κατηγορίας για Αγγλικά
-      subcategoryContainer.innerHTML = "<p>Discover our wide variety of drinks, food, and gift items!</p>";
+      //subcategoryContainer.innerHTML = "<p>Discover our wide variety of drinks, food, and gift items!</p>";
 
       // Προσθήκη προϊόντων για το home menu (προσωρινό παράδειγμα)
       productContainer.innerHTML = `
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	  
     } else if (language === 'el') {
       categoryTitle.textContent = "Καλώς ήρθατε στο Καφέ μας"; // Τίτλος της κατηγορίας για Ελληνικά
-      subcategoryContainer.innerHTML = "<p>Ανακαλύψτε την μεγάλη ποικιλία ποτών, φαγητών και δώρων μας!</p>";
+     // subcategoryContainer.innerHTML = "<p>Ανακαλύψτε την μεγάλη ποικιλία ποτών, φαγητών και δώρων μας!</p>";
 
       // Προσθήκη προϊόντων για το home menu στα Ελληνικά (προσωρινό παράδειγμα)
       productContainer.innerHTML = `

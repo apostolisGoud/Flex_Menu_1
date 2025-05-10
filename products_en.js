@@ -146,7 +146,7 @@ const products = {
 	
       { name: "Bagel (tomato,olive)", price: "$4.00", image: "bruschetta.jpg" },
       { name: "Handmade Kaseropita ", price: "$4.00", image: "bruschetta.jpg" },
-      { name: "Sausage pie", price: "$4.00", image: "bruschetta.jpg" },
+      { name: "Sausage roll", price: "$4.00", image: "bruschetta.jpg" },
       
 	  { name: "Gypsies", price: "$4.00", image: "bruschetta.jpg" },
      

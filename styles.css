@@ -200,6 +200,73 @@ button:hover {
   background-color: #e0d7c6;
 }
 
+
+.logo {
+        width: 8vw; /* Δυναμικό μέγεθος */
+        min-width: 60px; /* Ελάχιστο μέγεθος για πολύ μικρές οθόνες */
+        max-width: 100px; /* Όριο για μεγάλες οθόνες */
+        height: auto;
+        position: absolute;
+        top: 2vw;
+        left: 2vw;
+        pointer-events: none;
+        user-select: none;
+        image-rendering: crisp-edges;
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+        transform: rotate(-3deg) scale(1);
+        transition: transform 0.25s ease-in-out, filter 0.25s ease-in-out;
+    }
+
+    .logo:hover {
+        transform: rotate(0deg) scale(1.05);
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.6));
+    }
+
+    /* Responsive για κινητά */
+    @media (max-width: 600px) {
+        .logo {
+            width: 12vw; /* Μεγαλύτερο σε κινητά */
+            top: 3vw;
+            left: 3vw;
+        }
+    }
+
+
+
+.logo2 {
+        width: 8vw; /* Δυναμικό μέγεθος */
+        min-width: 60px; /* Ελάχιστο μέγεθος για πολύ μικρές οθόνες */
+        max-width: 100px; /* Όριο για μεγάλες οθόνες */
+        height: auto;
+        position: absolute;
+        top: 2.7vw;
+        left: 11vw;
+		
+        pointer-events: none;
+       border-radius: 10px;
+	   user-select: none;
+        image-rendering: crisp-edges;
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+		
+        transform: rotate(0deg) ;
+       
+    }
+
+    .logo2:hover {
+        transform: rotate(0deg) scale(1.05);
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.6));
+    }
+
+    /* Responsive για κινητά */
+    @media (max-width: 600px) {
+        .logo2 {
+            width: 12vw; /* Μεγαλύτερο σε κινητά */
+            top: 4vw;
+            left: 25vw;
+        }
+    }
+
+
 /* Social Section */
 .social-section {
   display: flex;
@@ -321,7 +388,7 @@ button:hover {
   #products {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
-    padding: 10px;
+    padding: 52px;
   }
 
   .product-card {
