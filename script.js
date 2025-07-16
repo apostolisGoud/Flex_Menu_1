@@ -6,55 +6,76 @@ document.addEventListener('DOMContentLoaded', () => {
   const categoryTitle = document.getElementById('category-title');
   const subcategoryContainer = document.getElementById('subcategory-container');
 
+
+
+
+
+
   // Λειτουργία για φόρτωση περιεχομένου για το Home Menu
   function loadHomeContent(language) {
-    if (language === 'en') {
-      categoryTitle.textContent = "Welcome to our Coffee Shop"; // Τίτλος της κατηγορίας για Αγγλικά
-      //subcategoryContainer.innerHTML = "<p>Discover our wide variety of drinks, food, and gift items!</p>";
+  const categoryTitle = document.getElementById('category-title');
+  const productContainer = document.getElementById('products');
 
-      // Προσθήκη προϊόντων για το home menu (προσωρινό παράδειγμα)
-      productContainer.innerHTML = `
-        <div class="product-card">
-          <h3>Coffee</h3>
-          <p>Enjoy the best coffee in town!</p>
-        </div>
-        <div class="product-card">
-          <h3>Pastries</h3>
-          <p>Freshly baked pastries to complement your coffee.</p>
-        </div>
-        <div class="product-card">
-          <h3>Gift Items</h3>
-          <p>Exclusive gift items for your loved ones.</p>
-        </div>
-      `;
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-    } else if (language === 'el') {
-      categoryTitle.textContent = "Καλώς ήρθατε στο Καφέ μας"; // Τίτλος της κατηγορίας για Ελληνικά
-     // subcategoryContainer.innerHTML = "<p>Ανακαλύψτε την μεγάλη ποικιλία ποτών, φαγητών και δώρων μας!</p>";
+  const drinksGR = [
+    { name: "Ελληνικός Καφές", desc: "Το αγαπημένο πρωινό ρόφημα των Ελλήνων!" },
+    { name: "Freddo Espresso", desc: "Δροσερή απόλαυση για όλες τις ώρες." },
+    { name: "Φυσικός Χυμός", desc: "Φρέσκα φρούτα στο ποτήρι σας." }
+  ];
 
-      // Προσθήκη προϊόντων για το home menu στα Ελληνικά (προσωρινό παράδειγμα)
-      productContainer.innerHTML = `
-        <div class="product-card">
-          <h3>Καφές</h3>
-          <p>Απολαύστε τον καλύτερο καφέ στην πόλη!</p>
-        </div>
-        <div class="product-card">
-          <h3>Ζαχαροπλαστεία</h3>
-          <p>Φρεσκοψημένα ζαχαροπλαστεία για να συνοδεύσετε τον καφέ σας.</p>
-        </div>
-        <div class="product-card">
-          <h3>Δώρα</h3>
-          <p>Αποκλειστικά δώρα για τους αγαπημένους σας.</p>
-        </div>
+  const foodsGR = [
+    { name: "Μπουγάτσα", desc: "Νούμερο ένα επιλογή για το πρωινό σας." },
+    { name: "Χειροποίητο Γλυκό Ημέρας", desc: "Κάθε μέρα και μια νέα έκπληξη!" },
+    { name: "Παγωτό", desc: "Δροσιά & απόλαυση με κάθε κουταλιά." }
+  ];
+
+  if (language === 'el') {
+    categoryTitle.textContent = "Προτεινόμενα για εσάς";
+    productContainer.innerHTML = '';
+
+    const allGR = [...drinksGR, ...foodsGR];
+
+    allGR.slice(0, 6).forEach((item, index) => {
+      const card = document.createElement('div');
+      card.className = 'product-card fade-in';
+      card.style.animationDelay = `${index * 0.2}s`;
+      card.innerHTML = `
+        <h3>${item.name}</h3>
+        <p>${item.desc}</p>
       `;
-    }
+      productContainer.appendChild(card);
+    });
   }
+
+  else if (language === 'en') {
+    categoryTitle.textContent = "Recommended for You";
+    productContainer.innerHTML = '';
+
+    const drinksEN = [
+      { name: "Greek Coffee", desc: "Traditional and strong for your mornings." },
+      { name: "Freddo Espresso", desc: "Cool and bold espresso-based drink." },
+      { name: "Natural Juice", desc: "Made fresh from seasonal fruits." }
+    ];
+
+    const foodsEN = [
+      { name: "Bougatsa", desc: "Top breakfast choice for locals." },
+      { name: "Handmade Sweet of the Day", desc: "Daily surprise desserts." },
+      { name: "Ice Cream", desc: "Refreshing and creamy delight." }
+    ];
+
+    const allEN = [...drinksEN, ...foodsEN];
+
+    allEN.slice(0, 6).forEach((item, index) => {
+      const card = document.createElement('div');
+      card.className = 'product-card fade-in';
+      card.style.animationDelay = `${index * 0.2}s`;
+      card.innerHTML = `
+        <h3>${item.name}</h3>
+        <p>${item.desc}</p>
+      `;
+      productContainer.appendChild(card);
+    });
+  }
+}
 
   // Κατά την φόρτωση της σελίδας, φορτώνει το περιεχόμενο του Home Menu για τη γλώσσα
   if (document.documentElement.lang === 'en') {

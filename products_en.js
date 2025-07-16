@@ -73,6 +73,17 @@ const products = {
     ],"Soft Drinks": [
       { name: "Coca Cola", price: "$2.00", image: "cocacola.jpeg" },
       { name: " Coca Cola Zero", price: "$2.50", image: "cocacola-zero.jpg" },
+	  
+	  
+	  
+	  { name: " Fanta Lemon", price: "$2.50", image: "fanda-lem.png" },
+	  	  { name: " Fanta Orange", price: "$2.50", image: "fanta-portoka.png" },
+	  	  { name: " Fanta Blue", price: "$2.50", image: "fanta-ble.png" },
+
+
+	  
+	  
+	  
 	  { name: " Sprite", price: "$2.50", image: "sprite.jpeg" },
       
 	  { name: " Ivi Lemon", price: "$2.50", image: "ivi_lemon.jpg" },
