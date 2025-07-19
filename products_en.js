@@ -4,15 +4,16 @@ const products = {
       { name: "Freddo Espresso", price: "3.00€", image: "fredo.jpg"},
       { name: "Freddo Cappuccino", price: "3.50€", image: "fredo_cappuccino.jpg" },
       { name: "Cappucthino", price: "3.00€", image: "capu.jfif" },
-	  { name: "Cappuccino Double", price: "3.00€", image: "capu2.jfif" },
-	  { name: "Espresso", price: "3.00€", image: "esp.jfif" },
+	  { name: "Cappuccino Double", price: "3.50€", image: "capu2.jfif" },
+	  { name: "Espresso", price: "2.50€", image: "esp.jfif" },
 	  { name: "Espresso Double", price: "3.00€", image: "esp2.jfif" },
 	  
-	  { name: "Greek Coffee", price: "3.00€", image: "gr.jpg" },
-	  { name: "Greek Coffee Double", price: "3.00€", image: "gr.jpg" },
+	  { name: "Greek Coffee", price: "2.00€", image: "gr.jpg" },
+	  { name: "Greek Coffee Double", price: "2.50€", image: "gr.jpg" },
 	  
-	  { name: "Frape", price: "3.00€", image: "frape.webp" },
-	  { name: "Nescafe", price: "3.00€", image: "nes.jfif" },
+	  { name: "Frape", price: "2.50€", image: "frape.webp" },
+	  { name: "Nescafe", price: "2.50€", image: "nes.jfif" },
+	  
       { name: "Iced Latte", price: "3.00€", image: "ice.jfif" },
 	  { name: "Latte", price: "3.00€", image: "late.jfif" },
 	  { name: "French Coffee Flavors : *Vanilla*  *Hazelnut*  *Caramel*  *Roasted Almond*", price: "3.00€", image: "fran.webp" },
@@ -31,10 +32,10 @@ const products = {
 	
 	
 	 "Chocolate": [
-     { name: "Iced Chocolate  Flavors : *Bueno*  *Oreo* *Caramel*   *Strawberry*", price: "3.00€", image: "gr.jpg" },
-	 { name: "Hot Chocolate  Flavors : *Bueno*  *Oreo* *Caramel*   *Strawberry*", price: "3.00€", image: "" },
-	 { name: "Mochaccino", price: "3.00€", image: "" },
-	 { name: "Milkshake", price: "3.00€", image: "" }
+     { name: "Iced Chocolate  Flavors : *Bueno*  *Oreo* *Caramel*   *Strawberry*", price: "3.50€", image: "gr.jpg" },
+	 { name: "Hot Chocolate  Flavors : *Bueno*  *Oreo* *Caramel*   *Strawberry*", price: "3.50€", image: "" },
+	 { name: "Mochaccino", price: "3.50€", image: "" },
+	 { name: "Milkshake", price: "3.50€", image: "" }
 	  
 
 
@@ -45,22 +46,24 @@ const products = {
 	  
     ],
     "Tea": [
-      { name: "Green Tea", price: "$2.00", image: "green-tea.jpg" },
-      { name: "Black Tea", price: "$2.50", image: "black-tea.jpg" },
-	   { name: "Forest Fruit Tea", price: "$2.50", image: "black-tea.jpg" },
-	   { name: "Sage Tea", price: "$2.50", image: "black-tea.jpg" }
+      { name: "Green Tea", price: "2.50€", image: "green-tea.jpg" },
+      { name: "Black Tea", price: "2.50€", image: "black-tea.jpg" },
+	   { name: "Forest Fruit Tea", price: "2.50€", image: "black-tea.jpg" },
+	   { name: "Sage Tea", price: "2.50€", image: "black-tea.jpg" }
 
      
+	 
+	 
 
     ],"Juices": [
-      { name: "French Orange Juice", price: "$2.00", image: "green-tea.jpg" },
+      { name: "French Orange Juice", price: "3.50€", image: "green-tea.jpg" },
       
 	  
 	  
-	   { name: "Orange Juice", price: "$2.50", image: "ivi-ximi.webp" },
-	   { name: "Lemon Juice", price: "$2.50", image: "ivi-ximi.webp" },
-	   { name: "Apple Juice", price: "$2.50", image: "ivi-ximi.webp" },
-	   { name: "Anamiktos Juice", price: "$2.50", image: "ivi-ximi.webp" }	
+	   { name: "Orange Juice", price: "2.50€", image: "ivi-ximi.webp" },
+	   { name: "Lemon Juice", price: "2.50€", image: "ivi-ximi.webp" },
+	   { name: "Apple Juice", price: "2.50€", image: "ivi-ximi.webp" },
+	   { name: "Anamiktos Juice", price: "2.50€", image: "ivi-ximi.webp" }	
 
      
 	 
@@ -71,36 +74,36 @@ const products = {
 	 
 
     ],"Soft Drinks": [
-      { name: "Coca Cola", price: "$2.00", image: "cocacola.jpeg" },
-      { name: " Coca Cola Zero", price: "$2.50", image: "cocacola-zero.jpg" },
+      { name: "Coca Cola", price: "2.50€", image: "cocacola.jpeg" },
+      { name: " Coca Cola Zero", price: "2.50€", image: "cocacola-zero.jpg" },
 	  
 	  
 	  
-	  { name: " Fanta Lemon", price: "$2.50", image: "fanda-lem.png" },
-	  	  { name: " Fanta Orange", price: "$2.50", image: "fanta-portoka.png" },
-	  	  { name: " Fanta Blue", price: "$2.50", image: "fanta-ble.png" },
+	  { name: " Fanta Lemon", price: "2.50€", image: "fanda-lem.png" },
+	  	  { name: " Fanta Orange", price: "2.50€", image: "fanta-portoka.png" },
+	  	  { name: " Fanta Blue", price: "2.50€", image: "fanta-ble.png" },
 
 
 	  
 	  
 	  
-	  { name: " Sprite", price: "$2.50", image: "sprite.jpeg" },
+	  { name: " Sprite", price: "2.50€", image: "sprite.jpeg" },
       
-	  { name: " Ivi Lemon", price: "$2.50", image: "ivi_lemon.jpg" },
-      { name: " Ivi Orange", price: "$2.50", image: "ivi_port.webp" },
-      { name: " Ivi Orange Blue  ", price: "$2.50", image: "ivi_b.webp" },
-	        { name: " Ivi Soda Lemon", price: "$2.50", image: "soda-lem.jpg" },
+	  { name: " Ivi Lemon", price: "2.50€", image: "ivi_lemon.jpg" },
+      { name: " Ivi Orange", price: "2.50€", image: "ivi_port.webp" },
+      { name: " Ivi Orange Blue  ", price: "2.50€", image: "ivi_b.webp" },
+	        { name: " Ivi Soda Lemon", price: "2.50€", image: "soda-lem.jpg" },
 
-	  { name: " Ivi Soda", price: "$2.50", image: "soda.jpg" },
+	  { name: " Ivi Soda", price: "2.50€", image: "soda.jpg" },
 	  
 	  
 	  
 	  
-	   { name: " Ice Tea Lemon", price: "$2.50", image: "lipton-lem.jpg" },
+	   { name: " Ice Tea Lemon", price: "2.50€", image: "lipton-lem.jpg" },
 
-	   { name: " Ice Tea Green", price: "$2.50", image: "lipton-green.jpg" },
+	   { name: " Ice Tea Green", price: "2.50€", image: "lipton-green.jpg" },
 
-	   { name: " Ice Tea Peach", price: "$2.50", image: "lipton-pea.jpg" },
+	   { name: " Ice Tea Peach", price: "2.50€", image: "lipton-pea.jpg" },
 
 
 	  
@@ -109,23 +112,27 @@ const products = {
 	  
 	  
 	  
-	   { name: " Schweppes Lemonade", price: "$2.50", image: "lemonade.jpg" },
+	   { name: " Schweppes Lemonade", price: "2.50€", image: "lemonade.jpg" },
 
-      { name: " Schweppes Orangeade", price: "$2.50", image: "orangeade.jpg" },
+      { name: " Schweppes Orangeade", price: "2.50€", image: "orangeade.jpg" },
      
 	  
 	  
-	  { name: " Schweppes Pomegranate", price: "$2.50", image: "rothi.jpg" },
+	  { name: " Schweppes Pomegranate", price: "2.50€", image: "rothi.jpg" },
 	  
 	  
-	  	  { name: " Krystal Lemon   ", price: "$2.50", image: "Krystal Lemon" },
+	  	  { name: " Krystal Lemon   ", price: "2.50€", image: "kistal_lemon.png" },
 
-	     { name: " Krystal Orange", price: "$2.50", image: "Krystal Orange" },
+	     { name: " Krystal Orange", price: "2.50€", image: "kristal_orange.png" },
+		 
+		 	     { name: " Krystal Orange Blue", price: "2.50€", image: "kristal_blue.png" },
+
+		 
 
 
 	  
-      { name: " water-500ml", price: "$2.50", image: "nero-500ml.jpg" },
-	        { name: " water-1lt", price: "$2.50", image: "nero-1l.jpg" }
+           { name: " water-500ml", price: "0.50€", image: "nero-500ml.jpg" },
+	        { name: " water-1lt", price: "1€", image: "nero-1l.jpg" }
 
 
 
@@ -134,11 +141,14 @@ const products = {
     ]
 	
 	,
-    "Alcohol": [
-      { name: "Alfa Beer ", price: "$2.00", image: "alfa.jpg" },
-      { name: "Amstel Beer", price: "$2.50", image: "amstel.jpg" },
-	   { name: "Amstel Radler Beer ", price: "$2.50", image: "amstel-lem.jpg" },
-	   { name: "Fix Beer", price: "$2.50", image: "fix.jpg" }
+    "Beers": [
+      { name: "Alfa  ", price: "3.50€", image: "alfa.jpg" },
+	  
+	       { name: "Kaiser  ", price: "4.00€", image: "kaiser.webp" },
+
+      { name: "Amstel ", price: "3.50€", image: "amstel.jpg" },
+	   { name: "Amstel Radler  ", price: "4.00€", image: "amstel-lem.jpg" },
+	   { name: "Fix ", price: "3.50€", image: "fix.jpg" }
 
      
 
